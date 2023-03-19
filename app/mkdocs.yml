@@ -1,0 +1,156 @@
+# Project information
+site_name: SSL Wiki
+site_url: https://www.ssl-wiki.com/
+site_author: SYLG
+site_description: Robocup Small Size League 教培系统
+docs_dir: build
+# Repository
+repo_name: SY-LG/SSL-Wiki
+repo_url: https://github.com/SY-LG/SSL-Wiki
+
+# Copyright
+copyright: Copyright &copy; 2023 SYLG
+
+# Configuration
+theme:
+  name: material
+  custom_dir: build/overrides
+  language: zh
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      # accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      # primary: grey
+      # accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.jpg
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SY-LG
+  generator: false
+
+# Plugins
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  # - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css
+
+# Page tree
+nav:
+  - 第零章 &nbsp; &nbsp; 写在前面:
+    - 0.1 &nbsp; 关于本教培系统: chapter_preface/about_the_book.md
+    - 0.2. &nbsp; 如何使用本教培系统: chapter_preface/suggestions.md
+  - 第一章 &nbsp; &nbsp; 绪论:
+    - 1.1. &nbsp; 什么是Robocup SSL: chapter_introduction/what_is_ssl.md
+    - 1.2. &nbsp; RoboCup SSL的技术框架: chapter_introduction/ssl_framework.md
+    - 1.3. &nbsp; RoboCup的更多资料: chapter_introduction/ssl_more_info.md
+  - 第二章 &nbsp; &nbsp; 视觉:
+    - 2.1. &nbsp; 基本架构: chapter_vision/vision_frameword.md
+    - 2.2. &nbsp; 捕捉图像: chapter_vision/image_capture.md
+    - 2.3. &nbsp; 从图像到数据: chapter_vision/image2data.md
+    - 2.4. &nbsp; 软件上的数据处理: chapter_vision/data_processing.md
+  - 第三章 &nbsp; &nbsp; 战术:
+    - 3.1. &nbsp; 基本框架: chapter_strategy/strategy_framework.md
+    - 3.2. &nbsp; 场势估计: chapter_strategy/field_estimation.md
+    - 3.3. &nbsp; Play: chapter_strategy/play.md
+    - 3.4. &nbsp; SKill: chapter_strategy/skill.md
+    - 3.5. &nbsp; 运动控制: chapter_strategy/motion.md
+  - 第四章 &nbsp; &nbsp; 通讯:
+    - 4.1. &nbsp; udp通讯: chapter_communicate/udp.md
+    - 4.2. &nbsp; 无线串口通讯: chapter_communicate/wireless_serial_port.md
+  - 第五章 &nbsp; &nbsp; 软件:
+    - 5.1. &nbsp; Qt绘制方法: chapter_software/qt.md
+    - 5.2. &nbsp; QML设计语法: chapter_software/qml.md
+  - 第六章 &nbsp; &nbsp; 机械:
+    - 6.1. &nbsp; 底盘及轮子: chapter_mechanics/chassis&wheels.md
+    - 6.2. &nbsp; 控球模块: chapter_mechanics/dribble.md
+    - 6.3. &nbsp; 踢球模块: chapter_mechanics/kick.md
+  - 第七章 &nbsp; &nbsp; 电控:
+    - 7.1. &nbsp; 主循环: chapter_electronics/main_loop.md
+    - 7.1. &nbsp; 功率模块和踢控: chapter_electronics/power_module&kick_control.md
+    - 7.2. &nbsp; 电机选型及驱动: chapter_electronics/motor_type&driver.md
+    - 7.3. &nbsp; 编码器和电机控制: chapter_electronics/encoders&motor_control.md
+  - 第八章 &nbsp; &nbsp; 其他经验分享: 
+    - chapter_other_experiences/index.md
