@@ -21,7 +21,7 @@
 
 ## 内容结构
 
-本书主要内容有：
+本教培系统主要内容有：
 
 - **视觉**：从摄像头获取信息
 - **战术**：综合获取的信息作出决策
@@ -34,5 +34,5 @@
 
 本书的成书过程中，我获得了许多人的帮助，包括但不限于：
 
-- 感谢感谢项目组全体成员的付出
+- 感谢项目组全体成员的付出，感谢SRC赛队对本项目的大力支持
 - 感谢 [hello-algo](https://github.com/krahets/hello-algo) 给出的写作模板，以及优秀开源项目 [Material-for-MkDocs](https://github.com/squidfunk/mkdocs-material/tree/master) 。
