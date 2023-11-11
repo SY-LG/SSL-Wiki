@@ -81,7 +81,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_software/qml/</loc>
+         <loc>https://www.ssl-wiki.com/chapter_software/Tigers-AutoRef/</loc>
+         <lastmod>2023-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.ssl-wiki.com/chapter_software/cray/</loc>
+         <lastmod>2023-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.ssl-wiki.com/chapter_software/gameController/</loc>
+         <lastmod>2023-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.ssl-wiki.com/chapter_software/owl2/</loc>
          <lastmod>2023-11-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
