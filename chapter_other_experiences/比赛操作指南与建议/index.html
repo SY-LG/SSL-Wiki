@@ -12,20 +12,16 @@
         <meta name="author" content="SYLG">
       
       
-        <link rel="canonical" href="https://www.ssl-wiki.com/chapter_strategy/motion/">
+        <link rel="canonical" href="https://www.ssl-wiki.com/chapter_other_experiences/%E6%AF%94%E8%B5%9B%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%E4%B8%8E%E5%BB%BA%E8%AE%AE/">
       
       
-        <link rel="prev" href="../skill/">
-      
-      
-        <link rel="next" href="../../chapter_communicate/Transmitter_principle/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.0.13">
     
     
       
-        <title>3.5.   运动控制 - SSL Wiki</title>
+        <title>比赛操作指南与建议 - SSL Wiki</title>
       
     
     
@@ -79,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dss" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -111,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.5. &nbsp; 运动控制
+              比赛操作指南与建议
             
           </span>
         </div>
@@ -457,18 +453,16 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
         
@@ -489,7 +483,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           第三章 &nbsp; &nbsp; 战术
@@ -502,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../strategy_framework/" class="md-nav__link">
+      <a href="../../chapter_strategy/strategy_framework/" class="md-nav__link">
         3.1. &nbsp; 基本框架
       </a>
     </li>
@@ -516,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../field_estimation/" class="md-nav__link">
+      <a href="../../chapter_strategy/field_estimation/" class="md-nav__link">
         3.2. &nbsp; 场势估计
       </a>
     </li>
@@ -530,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../play/" class="md-nav__link">
+      <a href="../../chapter_strategy/play/" class="md-nav__link">
         3.3. &nbsp; Play
       </a>
     </li>
@@ -544,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../skill/" class="md-nav__link">
+      <a href="../../chapter_strategy/skill/" class="md-nav__link">
         3.4. &nbsp; SKill
       </a>
     </li>
@@ -556,229 +550,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          3.5. &nbsp; 运动控制
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../chapter_strategy/motion/" class="md-nav__link">
         3.5. &nbsp; 运动控制
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    结论
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    代码详细剖析
-  </a>
-  
-    <nav class="md-nav" aria-label="代码详细剖析">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    入口
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    具体处理
-  </a>
-  
-    <nav class="md-nav" aria-label="具体处理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aangle" class="md-nav__link">
-    (a)计算参数：加速度可取angle
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_t_acc_e" class="md-nav__link">
-    (b)_t_acc，_e初始化
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c15" class="md-nav__link">
-    (c)迭代15次
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dtemptp" class="md-nav__link">
-    (d)计算点temp和向量tp
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    工具函数
-  </a>
-  
-    <nav class="md-nav" aria-label="工具函数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#angle_all" class="md-nav__link">
-    angle_all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    随机加速度
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evaluation" class="md-nav__link">
-    Evaluation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkaccelplayer-_acc-pvision-crashed_car_dir-crash_car_num-type-_c" class="md-nav__link">
-    CheckAccel(player, _acc, pVision, crashed_car_dir, crash_car_num, type, _C)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkrobotplayer-_pos-_vel-acc-orderbackfirst-pj-vj-aj-type-limittime" class="md-nav__link">
-    CheckRobot(player, _pos, _vel, acc, order.back().first, pj, vj, Aj, type, limitTime)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maketrajectoryplayer-pi-vi-ai-00f-_gamma-_stoptime-tradius-_decmax-thisplayer" class="md-nav__link">
-    MakeTrajectory(player, pi, vi, Ai, 0.0f, _gamma, _stoptime, tradius ,_DECMAX, THISPLAYER)
-  </a>
-  
-    <nav class="md-nav" aria-label="MakeTrajectory(player, pi, vi, Ai, 0.0f, _gamma, _stoptime, tradius ,_DECMAX, THISPLAYER)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a" class="md-nav__link">
-    (A) 我自己
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b" class="md-nav__link">
-    (B) 队友
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    (C) 敌人或球
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checktrajectory" class="md-nav__link">
-    CheckTrajectory
-  </a>
-  
-    <nav class="md-nav" aria-label="CheckTrajectory">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a_1" class="md-nav__link">
-    (A) 自己人
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_1" class="md-nav__link">
-    (B) 敌人或球
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cquadraticequation" class="md-nav__link">
-    CQuadraticEquation的相减
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1182,7 +958,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../chapter_other_experiences/">第八章 &nbsp; &nbsp; 其他经验分享</a>
+          <a href="../">第八章 &nbsp; &nbsp; 其他经验分享</a>
           
         </div>
       
@@ -1218,8 +994,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1229,58 +1003,36 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    结论
+    仿真使用
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    代码详细剖析
+    比赛时起代码的操作
   </a>
   
-    <nav class="md-nav" aria-label="代码详细剖析">
+    <nav class="md-nav" aria-label="比赛时起代码的操作">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    入口
+    接入视觉
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    具体处理
-  </a>
-  
-    <nav class="md-nav" aria-label="具体处理">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aangle" class="md-nav__link">
-    (a)计算参数：加速度可取angle
+    连接车辆
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b_t_acc_e" class="md-nav__link">
-    (b)_t_acc，_e初始化
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c15" class="md-nav__link">
-    (c)迭代15次
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dtemptp" class="md-nav__link">
-    (d)计算点temp和向量tp
+  <a href="#rbk" class="md-nav__link">
+    启动RBK
   </a>
   
 </li>
@@ -1289,125 +1041,18 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    工具函数
-  </a>
-  
-    <nav class="md-nav" aria-label="工具函数">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#angle_all" class="md-nav__link">
-    angle_all
+    写脚本注意事项
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    随机加速度
+    到达场地后的测试事项
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evaluation" class="md-nav__link">
-    Evaluation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkaccelplayer-_acc-pvision-crashed_car_dir-crash_car_num-type-_c" class="md-nav__link">
-    CheckAccel(player, _acc, pVision, crashed_car_dir, crash_car_num, type, _C)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkrobotplayer-_pos-_vel-acc-orderbackfirst-pj-vj-aj-type-limittime" class="md-nav__link">
-    CheckRobot(player, _pos, _vel, acc, order.back().first, pj, vj, Aj, type, limitTime)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#maketrajectoryplayer-pi-vi-ai-00f-_gamma-_stoptime-tradius-_decmax-thisplayer" class="md-nav__link">
-    MakeTrajectory(player, pi, vi, Ai, 0.0f, _gamma, _stoptime, tradius ,_DECMAX, THISPLAYER)
-  </a>
-  
-    <nav class="md-nav" aria-label="MakeTrajectory(player, pi, vi, Ai, 0.0f, _gamma, _stoptime, tradius ,_DECMAX, THISPLAYER)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a" class="md-nav__link">
-    (A) 我自己
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b" class="md-nav__link">
-    (B) 队友
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    (C) 敌人或球
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checktrajectory" class="md-nav__link">
-    CheckTrajectory
-  </a>
-  
-    <nav class="md-nav" aria-label="CheckTrajectory">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a_1" class="md-nav__link">
-    (A) 自己人
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_1" class="md-nav__link">
-    (B) 敌人或球
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cquadraticequation" class="md-nav__link">
-    CQuadraticEquation的相减
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1426,7 +1071,7 @@
                   
 
   
-    <a href="https://github.com/SY-LG/SSL-Wiki/edit/master/docs/chapter_strategy/motion.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/SY-LG/SSL-Wiki/edit/master/docs/chapter_other_experiences/比赛操作指南与建议.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1434,122 +1079,123 @@
   
 
 
-<h1 id="dss">dss笔记<a class="headerlink" href="#dss" title="Permanent link">&para;</a></h1>
-<h2 id="_1">结论<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>对于快要撞到的车，尝试找解（随机），找不到就急刹车。判断是否碰撞是用几小段匀加速直线运动模拟</p>
-<h2 id="_2">代码详细剖析<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">入口<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p><code>tempVel = DynamicSafetySearch::Instance()-&gt;SafetySearch(vecNumber, globalVel, pVision, priority, target, task().player.flag, usedtime, capability.maxAccel);</code></p>
-<p>最终返回处理后的_nvel，即修正后的规划速度</p>
-<h3 id="_4">具体处理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>速度&lt;100且不需要避球不会用到dss</p>
-<ul>
-<li>_stoptime=usedtime</li>
-<li>_flag 传入的flag</li>
-<li>_pos 位置</li>
-<li>refresh_priority：离目标0-1车身时pri为-1,1-3车身时pri为1，其余为0</li>
-<li>_nvel 原规划速度</li>
-<li>_vel 视觉速度</li>
-<li>_CNum 预测多少周期之后的事情，最多15个周期，如果速度小能及时减速那就更小，max((_vel.length()/maxacc*60),15)</li>
-<li>_C 单周期时长 1/60</li>
-<li>_acc 原规划加速度 (_nvel-_vel)/_C</li>
-<li>_gamma 预测多少秒后的事情 _C*_CNum</li>
-</ul>
-<p>首先定义[安全]=CheckAccel</p>
-<p>若priority=-1或CheckAccel是safe，保持原规划速度
-否则要处理：</p>
-<h4 id="aangle">(a)计算参数：加速度可取angle<a class="headerlink" href="#aangle" title="Permanent link">&para;</a></h4>
-<p>（开局先）算每个对象的AVOID_DIST,敌方和我是一个min_dist(1)和max_dist(9)之间的距离，速度越大dist越大；球取5
-算avoid_dist和avoid_angle：对我方的容忍度有点高，其余的看图。</p>
-<ul>
-<li>max_radius 最大加速度</li>
-<li>t_mid_angle=crashed_car_dir的角度</li>
-<li>算safe_angle_start/end：avoid_angle是会撞车的角度，除开之后算个start和end用于随机</li>
-</ul>
-<h4 id="b_t_acc_e">(b)_t_acc，_e初始化<a class="headerlink" href="#b_t_acc_e" title="Permanent link">&para;</a></h4>
-<p>默认0和1</p>
-<p>如果上次find_flag为true而且这一帧[安全]，_t_acc设为上次的加速度，然后据此评估_e</p>
-<p>否则我的-1车号的find_flag变成false</p>
-<h4 id="c15">&copy;迭代15次<a class="headerlink" href="#c15" title="Permanent link">&para;</a></h4>
-<p>每次随机加速度，评分，所有安全的加速度里找分最小的（最好），同时find_flag为true
-即如果找不到安全的，那find_flag就是false</p>
-<h4 id="dtemptp">(d)计算点temp和向量tp<a class="headerlink" href="#dtemptp" title="Permanent link">&para;</a></h4>
-<p>如果type是球，不会被初始化。而且这个东西没啥用</p>
-<p>最后如果find_flag了，那就是有好解，记录下来并得到最终dss后速度
-否则急刹，分数归1，记录</p>
-<h3 id="_5">工具函数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<h4 id="angle_all">angle_all<a class="headerlink" href="#angle_all" title="Permanent link">&para;</a></h4>
-<p><span class="arithmatex">\(0-2\pi\)</span>的atan</p>
-<h4 id="_6">随机加速度<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
-<p>角度范围内，保证考虑时间内加速后不超速的一个加速度（也可能为0）</p>
-<h4 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h4>
-<p>对加速度和车号评估_e，这个加速度好不好的评分，涉及上周期的评分，加速度方向和加速度大小：
-两个指标，这一帧的原目标加速度（目标）和上一帧的加速度（好变），且上一帧分数越高后者系数c越大，下面的值算法相同
-先得到加速度的夹角，记为v，则<span class="arithmatex">\(s=v^2  +0.5(pi^2-v^2)/400^2*|a.mod-a0.mod|\)</span>，不能超过<span class="arithmatex">\(\pi^2\)</span>
-s2的计算类似，但系数为0.3
-最后<span class="arithmatex">\(_e=(s1+c*s2)/(1+c)/(\pi^2)\)</span></p>
-<h4 id="checkaccelplayer-_acc-pvision-crashed_car_dir-crash_car_num-type-_c">CheckAccel(player, _acc, pVision, crashed_car_dir, crash_car_num, type, _C)<a class="headerlink" href="#checkaccelplayer-_acc-pvision-crashed_car_dir-crash_car_num-type-_c" title="Permanent link">&para;</a></h4>
-<p>避我方车：将非自己，且有效的车存储到order中，由远到近排序，从后往前一个一个看
-算目标的p,v,a，其中a有两种拿法，车号大于自己的（这一帧没规划）用视觉差分，小于的用last_acc
-如果CheckRobot是unsafe，就unsafe结束判断</p>
-<p>crashed_car_dir（也许是预测撞车的方向向量）：考虑pva，t后的位置和我位置的连线。t的计算：一般看对面沿着这个加速度加速到最大速度要多久，加速度小于1取_gamma</p>
-<p>避敌方车和球基本一致，但球的crash_car_num=-1</p>
-<p>最后crashed_car_dir，crash_car_num，type拿出去用</p>
-<h4 id="checkrobotplayer-_pos-_vel-acc-orderbackfirst-pj-vj-aj-type-limittime">CheckRobot(player, _pos, _vel, acc, order.back().first, pj, vj, Aj, type, limitTime)<a class="headerlink" href="#checkrobotplayer-_pos-_vel-acc-orderbackfirst-pj-vj-aj-type-limittime" title="Permanent link">&para;</a></h4>
-<p>我，目标点，视觉速度，原规划加速度，要判断的车号，目标的p,v,a，类型，单周期时长
-limitTime是单周期时长吗？？</p>
-<p>tradius=TEAMMATE_AVOID_DIST(1~9)<span class="arithmatex">\(*\sqrt{1+2\frac{|v|}{250}\)</span>（半径参数，我友敌球均不同，大概是6）</p>
-<p>分别对我和对象构建路径，看是否碰撞（具体参数不同，回来看！）</p>
-<h4 id="maketrajectoryplayer-pi-vi-ai-00f-_gamma-_stoptime-tradius-_decmax-thisplayer">MakeTrajectory(player, pi, vi, Ai, 0.0f, _gamma, _stoptime, tradius ,_DECMAX, THISPLAYER)<a class="headerlink" href="#maketrajectoryplayer-pi-vi-ai-00f-_gamma-_stoptime-tradius-_decmax-thisplayer" title="Permanent link">&para;</a></h4>
-<p>目的是构建 CQuadraticEquation q[3] 二维向量关于t的二次方程 的数组</p>
-<h5 id="a">(A) 我自己<a class="headerlink" href="#a" title="Permanent link">&para;</a></h5>
-<p>t0=0 tc=_gamma tend=usedtime</p>
-<p>确定_tend：如果预计快到了，_tend就取tend，假设车子以最大减速度进行原方向减速，把该轨迹存进q[0]里
-否则，q[0]按规划加速度存一版，算一下按这个加速度tc后：
-- 如果停下来了（速度小），_tend取tc，不存
-- 否则，让它在tc后按那时的原速度方向最大减速，一直考虑到tend的时候（过了t2=t1+t)，存_tend=t2，存q[1]</p>
-<h5 id="b">(B) 队友<a class="headerlink" href="#b" title="Permanent link">&para;</a></h5>
-<p>_stoptime（tend）只取到我自己的tend（已经算好了）</p>
-<p>静止的好说，否则，tc=min(急刹车时间，gamma)。如果tend比tc小，只存到tend的一版进q[0]结束，可以准备比较了
-否则，先存到tend的一版进q[0]，然后同样逻辑考虑急刹段和静止段</p>
-<h5 id="c">(C) 敌人或球<a class="headerlink" href="#c" title="Permanent link">&para;</a></h5>
-<p>只考虑一直匀速</p>
-<h4 id="checktrajectory">CheckTrajectory<a class="headerlink" href="#checktrajectory" title="Permanent link">&para;</a></h4>
-<h5 id="a_1">(A) 自己人<a class="headerlink" href="#a_1" title="Permanent link">&para;</a></h5>
-<p>远离他的话直接safe，否则正常流程遍历轨迹看看有没有crash</p>
-<p>如果有的话，除非相交点的时间比_C还短，而且位置差值矢量-加速度矢量的夹角不够大，才算safe，不然都是unsafe</p>
-<h5 id="b_1">(B) 敌人或球<a class="headerlink" href="#b_1" title="Permanent link">&para;</a></h5>
-<p>正常流程</p>
-<h4 id="cquadraticequation">CQuadraticEquation的相减<a class="headerlink" href="#cquadraticequation" title="Permanent link">&para;</a></h4>
-<p>首先构造关于t的四次方程，t取0开始算，保持相交时间那么长（但是起点时间信息丢失了，不能丢吧）</p>
-<h1 id="question">Question<a class="headerlink" href="#question" title="Permanent link">&para;</a></h1>
+  <h1>比赛操作指南与建议</h1>
+
+<h2 id="_1">仿真使用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ol>
-<li>60帧1s？A:也许问题不大，cmotion底层都是这样算的</li>
-<li>CheckAccel的加速度只用一阶差分？A:也许问题不大，噪声环境下差不太多</li>
-<li>CheckAccel计算crashed_car_dir时用的t有点怪（容易太长？）而且最大速度都按照我们车的来处理？</li>
-<li>line215，车号-1完全不合理！！！A:确实有问题</li>
-<li>随机加速度，两个rand其实功能是重复的，是为了让它小一点吗</li>
-<li>评分函数看起来分数会很小很小，max_translation到底是限制速度还是加速度，还是我对加速度的认知有错误。即使没错为啥平方</li>
-<li>CQuadraticEquation的相减 done</li>
+<li>将rbk.cfg中的simulation设为true  </li>
+<li>开owl2.exe  </li>
+<li>点击蓝、左右，开rbk  </li>
+<li>勾选相机，点击下方连接  </li>
+<li>开grsim，将vision-multicast-port与owl2统一，在show模式中修改grsim参数, hide模式减少开销, 帧率低于60fps可关闭对方的仿真</li>
+<li>进裁判盒，send相应指令  </li>
+<li>alt + 中键发布放球点  </li>
+<li>数字键上相应车数（ctrl modifier上黄方），0（10辆）-（11辆）</li>
 </ol>
-<h1 id="_7">找问题思路<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
+<h2 id="_2">比赛时起代码的操作<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">接入视觉<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ol>
-<li>CheckRobot得到unsafe是否及时</li>
-<li>如果及时，是不是每次能找到解的时候都找到了（15次迭代？评分？）</li>
-<li>找到的解随时间是否收敛</li>
+<li>
+<p>连接网线</p>
+</li>
+<li>
+<p>设置静态IP（网络和internet设置-》更改适配器选项（以太网）-》右键属性-》IPv4属性）</p>
+</li>
+<li>
+<p>关闭防火墙（网络和internet设置-》windows防火墙）</p>
+</li>
+<li>
+<p>打开owl2.exe（注意与RBK_RUN_2015在同一目录下）</p>
+</li>
+<li>
+<p>右上角拨至real</p>
+</li>
+<li>
+<p>连接相机，前1、2或4个</p>
+</li>
+<li>
+<p>点击connect</p>
+</li>
+<li>
+<p>此时若owl2不显示视觉，重启电脑后从步骤4开始重复</p>
+</li>
 </ol>
-<h1 id="tyh">tyh<a class="headerlink" href="#tyh" title="Permanent link">&para;</a></h1>
+<h3 id="_4">连接车辆<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <ol>
-<li>看log，not allowed很难进去（开局判断safe）</li>
-<li>有没有可能，以前进去之后迭代不出来（找解有问题），就把进去的条件锁紧了？</li>
+<li>
+<p>插上发射机，左右灯交替闪
+在cray.exe中，记录COM口编号，选择frequency与车辆拨码对应，点击connect，发射机两灯常亮</p>
+</li>
+<li>
+<p>选择车号（均从0开始计算），将指令置零，点击start，发射机左灯常亮，右灯闪烁，说明在发包</p>
+</li>
+<li>
+<p>确认车号对应无误，且硬件正常后，断开cray的连接，释放串口</p>
+</li>
 </ol>
-<h1 id="debug">debug记录<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h1>
-<p>浅蓝色-目前的v
-蓝色-规划的v
-白色-规划的acc
-红黑-acc禁区
-黄-不会撞的随机acc
-紫色-调整后的acc</p>
+<h3 id="rbk">启动RBK<a class="headerlink" href="#rbk" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>检查lua_scripts/ssl/config.lua中IS_TEST_MODE = false</p>
+</li>
+<li>
+<p>检查lua_scripts/ssl/opponent/Other.lua</p>
+</li>
+<li>
+<p>检查rbk.cfg中simulation = false，serialPortName = COMX（cray中的COM口）</p>
+</li>
+<li>
+<p>在owl2中选择left或者right（left：门将站场地左侧），选择颜色起rbk</p>
+</li>
+<li>
+<p>确认RBK输出方向和颜色无问题，确认能够接受到裁判盒信息</p>
+</li>
+<li>
+<p>打开rec，记录LOG</p>
+</li>
+<li>
+<p>如果启动时闪退，直接重新启动RBK</p>
+</li>
+<li>
+<p>如果依然闪退，回退版本：git reset --hard HEAD^</p>
+</li>
+</ol>
+<h2 id="_5">写脚本注意事项<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>测试时注意分区内开球点的随机性</p>
+</li>
+<li>
+<p>注意场地参数化，使用param.lua中的场地参数</p>
+</li>
+<li>
+<p>注意开球车固定匹配（方便调参）</p>
+</li>
+<li>
+<p>注意仿真不考虑跑点运动学约束</p>
+</li>
+<li>
+<p>注意少车时的进攻（调整动态匹配）</p>
+</li>
+<li>
+<p>注意及时exit进入advance</p>
+</li>
+<li>
+<p>多利用LOG进行调试</p>
+</li>
+<li>
+<p>如果进攻直接打门没有好机会，可以考虑造角球或者造前场任意球</p>
+</li>
+</ol>
+<h2 id="_6">到达场地后的测试事项<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>场地的相关参数：球的滑动摩擦系数、滚动摩擦系数、反弹系数，车跑点时的速度上限</p>
+</li>
+<li>
+<p>other.lua中脚本的踢球力度以及其他参数</p>
+</li>
+</ol>
 
 
 
@@ -1573,42 +1219,6 @@ limitTime是单周期时长吗？？</p>
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="页脚" >
-        
-          
-          <a href="../skill/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 3.4. &amp;nbsp; SKill" rel="prev">
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <div class="md-ellipsis">
-                <span class="md-footer__direction">
-                  上一页
-                </span>
-                3.4. &nbsp; SKill
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../../chapter_communicate/Transmitter_principle/" class="md-footer__link md-footer__link--next" aria-label="下一页: 4.1. &amp;nbsp; 发射机原理" rel="next">
-            <div class="md-footer__title">
-              <div class="md-ellipsis">
-                <span class="md-footer__direction">
-                  下一页
-                </span>
-                4.1. &nbsp; 发射机原理
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
