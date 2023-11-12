@@ -12,20 +12,20 @@
         <meta name="author" content="SYLG">
       
       
-        <link rel="canonical" href="https://www.ssl-wiki.com/chapter_vision/image2data/">
+        <link rel="canonical" href="https://www.ssl-wiki.com/chapter_electronics/HAL/">
       
       
-        <link rel="prev" href="../image_capture/">
+        <link rel="prev" href="../STM32/">
       
       
-        <link rel="next" href="../data_processing/">
+        <link rel="next" href="../STM32-FOC-Ctrl/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.0.13">
     
     
       
-        <title>2.3.   从图像到数据 - SSL Wiki</title>
+        <title>7.3.   HAL库 - SSL Wiki</title>
       
     
     
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hal" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.3. &nbsp; 从图像到数据
+              7.3. &nbsp; HAL库
             
           </span>
         </div>
@@ -381,24 +386,18 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
-        
-          
-        
-          
         
           
         
@@ -411,7 +410,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           第二章 &nbsp; &nbsp; 视觉
@@ -424,8 +423,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../vision_frameword/" class="md-nav__link">
-        2.1. &nbsp; 基本架构
+      <a href="../../chapter_vision/vision_access/" class="md-nav__link">
+        2.1. &nbsp; vision启动与接入
       </a>
     </li>
   
@@ -438,44 +437,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../image_capture/" class="md-nav__link">
-        2.2. &nbsp; 捕捉图像
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        2.3. &nbsp; 从图像到数据
-      </a>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../data_processing/" class="md-nav__link">
-        2.4. &nbsp; 软件上的数据处理
+      <a href="../../chapter_vision/vision_operation/" class="md-nav__link">
+        2.2. &nbsp; vision操作流程
       </a>
     </li>
   
@@ -650,8 +613,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_communicate/udp/" class="md-nav__link">
-        4.1. &nbsp; udp通讯
+      <a href="../../chapter_communicate/Transmitter_principle/" class="md-nav__link">
+        4.1. &nbsp; 发射机原理
       </a>
     </li>
   
@@ -664,8 +627,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_communicate/wireless_serial_port/" class="md-nav__link">
-        4.2. &nbsp; 无线串口通讯
+      <a href="../../chapter_communicate/Software-to-software_communication/" class="md-nav__link">
+        4.2. &nbsp; 软件间通讯
       </a>
     </li>
   
@@ -818,10 +781,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -842,36 +801,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_mechanics/chassis%26wheels/" class="md-nav__link">
-        6.1. &nbsp; 底盘及轮子
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_mechanics/dribble/" class="md-nav__link">
-        6.2. &nbsp; 控球模块
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_mechanics/kick/" class="md-nav__link">
-        6.3. &nbsp; 踢球模块
+      <a href="../../chapter_mechanics/mechanics/" class="md-nav__link">
+        6.1. &nbsp; 机械结构
       </a>
     </li>
   
@@ -890,18 +821,22 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
       
       
+        
+          
         
           
         
@@ -918,7 +853,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           第七章 &nbsp; &nbsp; 电控
@@ -931,8 +866,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_electronics/main_loop/" class="md-nav__link">
-        7.1. &nbsp; 主循环
+      <a href="../FOC/" class="md-nav__link">
+        7.1. &nbsp; FOC开发
       </a>
     </li>
   
@@ -945,8 +880,152 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_electronics/power_module%26kick_control/" class="md-nav__link">
-        7.1. &nbsp; 功率模块和踢控
+      <a href="../STM32/" class="md-nav__link">
+        7.2. &nbsp; STM32开发资料
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          7.3. &nbsp; HAL库
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        7.3. &nbsp; HAL库
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gpio" class="md-nav__link">
+    GPIO相关
+  </a>
+  
+    <nav class="md-nav" aria-label="GPIO相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    常用功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpio_1" class="md-nav__link">
+    GPIO类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpio_2" class="md-nav__link">
+    GPIO函数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    时钟相关
+  </a>
+  
+    <nav class="md-nav" aria-label="时钟相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rcc" class="md-nav__link">
+    RCC（复位和时钟控制器）的时钟部分
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    中断相关
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    通信
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adc" class="md-nav__link">
+    ADC相关
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STM32-FOC-Ctrl/" class="md-nav__link">
+        7.4. &nbsp; STM32-FOC-Ctrl
       </a>
     </li>
   
@@ -959,22 +1038,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_electronics/motor_type%26driver/" class="md-nav__link">
-        7.2. &nbsp; 电机选型及驱动
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_electronics/encoders%26motor_control/" class="md-nav__link">
-        7.3. &nbsp; 编码器和电机控制
+      <a href="../rasberrypi/" class="md-nav__link">
+        7.4. &nbsp; 树莓派
       </a>
     </li>
   
@@ -1051,6 +1116,98 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gpio" class="md-nav__link">
+    GPIO相关
+  </a>
+  
+    <nav class="md-nav" aria-label="GPIO相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    常用功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpio_1" class="md-nav__link">
+    GPIO类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpio_2" class="md-nav__link">
+    GPIO函数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    时钟相关
+  </a>
+  
+    <nav class="md-nav" aria-label="时钟相关">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rcc" class="md-nav__link">
+    RCC（复位和时钟控制器）的时钟部分
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    中断相关
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    通信
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adc" class="md-nav__link">
+    ADC相关
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1065,7 +1222,7 @@
                   
 
   
-    <a href="https://github.com/SY-LG/SSL-Wiki/edit/master/docs/chapter_vision/image2data.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/SY-LG/SSL-Wiki/edit/master/docs/chapter_electronics/HAL.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1073,9 +1230,243 @@
   
 
 
-  <h1>2.3. &nbsp; 从图像到数据</h1>
-
-
+<h1 id="hal">HAL库学习<a class="headerlink" href="#hal" title="Permanent link">&para;</a></h1>
+<h2 id="gpio">GPIO相关<a class="headerlink" href="#gpio" title="Permanent link">&para;</a></h2>
+<h3 id="_1">常用功能<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>点亮LED</p>
+<p>根据电路确定引脚-&gt;初始化系统时钟与GPIOx的时钟-&gt;初始化GPIOx-&gt;设置对应引脚的高低电平</p>
+<p>设置GPIO的mode为GPIO_Mode_Out_PP</p>
+</li>
+<li>
+<p>按键    </p>
+<p>根据电路确定引脚-&gt;初始化系统时钟与GPIOx的时钟-&gt;初始化GPIOx-&gt;读取电平</p>
+<p>设置引脚为GPIO的输入模式，既不上拉也不下拉（其实是否上拉下拉并无影响）</p>
+</li>
+</ul>
+<h3 id="gpio_1">GPIO类<a class="headerlink" href="#gpio_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>GPIO_InitTypeDef</p>
+<p>HAL库中GPOI的初始化类型</p>
+<p>包括Pin，Mode，Pull，Speed</p>
+<p>工作模式mode定义</p>
+<p>注意，这里的定义的具体名字可能在不同的文档中不一样，需要查询，可能和HAL版本有关</p>
+<p>在stm32f1xx_hal_gpio.h中有详细定义，如下:</p>
+<p><font color=Blue>#define  GPIO_MODE_INPUT 0x00000000u </font>
+/*!&lt; Input Floating Mode */</p>
+<p><font color=Blue>#define  GPIO_MODE_OUTPUT_PP 0x00000001u</font>
+/*!&lt; Output Push Pull Mode */</p>
+<p><font color=Blue>#define  GPIO_MODE_OUTPUT_OD 0x00000011u</font>
+/*!&lt; Output Open Drain Mode */</p>
+<p><font color=Blue>#define  GPIO_MODE_AF_PP 0x00000002u</font>
+/<em>!&lt; Alternate Function Push Pull Mode</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_AF_OD 0x00000012u</font>
+ /<em>!&lt; Alternate Function Open Drain Mode</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_AF_INPUT  GPIO_MODE_INPUT</font>/<em>!&lt; Alternate Function Input Mode</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_ANALOG 0x00000003u   </font>
+/<em>!&lt; Analog Mode</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_IT_RISING 0x10110000u   </font>
+/<em>!&lt; External Interrupt Mode with Rising edge trigger detection</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_IT_FALLING  0x10210000u   </font>
+/<em>!&lt; External Interrupt Mode with Falling edge trigger detection</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_IT_RISING_FALLING  0x10310000u   </font>
+/*!&lt; External Interrupt Mode with Rising/Falling edge trigger detection  */</p>
+<p><font color=Blue>#define  GPIO_MODE_EVT_RISING  0x10120000u   </font>
+/<em>!&lt; External Event Mode with Rising edge trigger detection</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_EVT_FALLING 0x10220000u   </font>
+/<em>!&lt; External Event Mode with Falling edge trigger detection</em>/</p>
+<p><font color=Blue>#define  GPIO_MODE_EVT_RISING_FALLING  0x10320000u   </font>
+/<em>!&lt; External Event Mode with Rising/Falling edge trigger detection</em>/</p>
+</li>
+</ul>
+<h3 id="gpio_2">GPIO函数<a class="headerlink" href="#gpio_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><font color=Blue>__HAL_RCC_GPIOx_CLK_ENABLE()</font></p>
+<p>GPIOx的时钟使能信号，在使用该GPIO前一定要使能时钟</p>
+</li>
+<li>
+<p><font color=Blue>HAL_GPIO_Init(GPIOx, &amp;GPIO_InitTypeDef);</font></p>
+<p>初始化GPIOx</p>
+</li>
+<li>
+<p><font color=Blue>HAL_GPIO_WritePin(GPIOx,GPIO_Pin,a)</font></p>
+<p>a可以为GPIO_PIN_RESET或GPIO_PIN_SET，表示把GPIOx的GPIO_Pin脚设置为0或1</p>
+</li>
+<li>
+<p><font color=Blue>TeHAL_GPIO_ReadPin(GPIOx,GPIO_Pin)st</font></p>
+<p>读取GPIOx的GPIO_Pin脚的电平</p>
+<p>1是高电平，0是低电平</p>
+</li>
+</ul>
+<h2 id="_2">时钟相关<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="rcc">RCC（复位和时钟控制器）的时钟部分<a class="headerlink" href="#rcc" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>需要设置的内容有：
+    1.系统时钟SYSCLK</p>
+<p>2.设置AHB分频因子（决定HCLK等于多少）</p>
+<p>3.设置APB2分频因子（决定PCLK2等于多少）</p>
+<p>4.设置APB1分频因子（决定PCLK1等于多少）</p>
+<p>5.设置各个外设的分频因子</p>
+<p>然后控制AHB、APB2和APB1这三条总线时钟的开启、控制每个外设的时钟的开启。</p>
+<p>常用的设置为：PCLK2 = HCLK = SYSCLK=PLLCLK = 72M，PCLK1=HCLK/2 = 36M</p>
+</li>
+<li>
+<p>MCO输出</p>
+<p>可以将PA8（stm32f103中）引脚设置为MOC输出，然后可通过示波器查看其出书情况
+函数</p>
+</li>
+<li>
+<p>函数
+    HAL_Delay() 延时一段时间</p>
+</li>
+</ul>
+<h2 id="_3">中断相关<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>中断都定义在IRQn_Type结构体中</p>
+<p>中断函数的定义位于stm32f1xx_it中</p>
+<ul>
+<li>
+<p><strong>EXTI（外部中断/事件控制器）</strong></p>
+<p>EXIT0~EXIT15可用于GPIO，通过编程可将任意GPIO作为EXIT的输入源
+举例EXIT0对应GPIOx的PIN0引脚</p>
+<ul>
+<li>
+<p>HAL_NVIC_SetPriority(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority)</p>
+<p>第一个为中断号，也即IRQn_Type结构体中的某一个，第二个为抢占优先级0~3（越低优先级越高），第三个为响应优先级</p>
+</li>
+<li>
+<p>HAL_NVIC_EnableIRQ(IRQn_Type IRQn)</p>
+<p>使能IRQn中断</p>
+<p>在startup中可以找到对应中断函数的名称（大概？？？？？）</p>
+<p>然后自己写中断函数，可以用define的方法给中断函数改个名字方便使用</p>
+<div class="highlight"><pre><span></span><code>\#define EXTI0_IRQHandler MYIT_Handler
+</code></pre></div>
+<p>详细的情况用到EXTI中断的时候再配置    </p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>systick系统定时器</strong> </p>
+<p>当其数值清0时会触发一次中断，也即每隔一段时间调用一次中断</p>
+<p>因此可以设定其数值，然后触发的中断为修改某一变量的值，通过该变量的值即可判断调用了多少次中断函数，也即经过了多少个周期</p>
+<p>D可以用于一些固定频率触发的时间</p>
+<p>比如电机的恒定频率的控制上  </p>
+</li>
+</ul>
+<h2 id="_4">通信<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>分类：</p>
+<p>1.串行通讯与并行通讯</p>
+<p>2.全双工、半双工及单工通讯</p>
+<ul>
+<li>
+<p>全双工：在同一时刻，两个设备之间可以同时收发数据</p>
+</li>
+<li>
+<p>半双工:两个设备之间可以收发数据，但不能在同一时刻进行</p>
+</li>
+<li>
+<p>单工:在任何时刻都只能进行一个方向的通讯，即一个固定为发送设备，另一个固定为接收设备</p>
+</li>
+</ul>
+<p>3.同步通讯与异步通讯</p>
+</li>
+<li>
+<p>USART串口通信</p>
+<p>有别于USART还有一个UART(Universal Asynchronous Receiver and 
+Transmitter)，它是在USART基础上裁剪掉了同步通信功能，只有异步通信。简单区分同步和异步就是看通信时需不需要对外提供时钟输出，我们平时用的串口通信基本都是UART。</p>
+<p>本身USART接口，在stm32f103xb.h中有定义</p>
+</li>
+</ul>
+<h2 id="adc">ADC相关<a class="headerlink" href="#adc" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>电压限制</p>
+<p>ADC的输入范围为：[V<sub>REF-</sub> , V<sub>REF+</sub>],还受V<sub>DDA</sub>,V<sub>SSA</sub>影响</p>
+<p>这些电压值是由硬件电路决定的</p>
+<p>V<sub>REF-</sub>与V<sub>SSA</sub>会接地，V<sub>REF+</sub>与V<sub>DDA</sub>会接3.3V，所以范围是0~3.3V</p>
+</li>
+<li>
+<p>通道</p>
+<p>规则通道与注入通道</p>
+<p>规则通道是最常用的一种，没有什么特别注意的地方</p>
+<p>注入通道，类似于中断，有可能插入规则通道过程中进行转换，转换完成后再回到规则通道   </p>
+</li>
+<li>
+<p>转换顺序</p>
+<p>规则通道的转换顺序由SQR3~SQR1决定</p>
+</li>
+<li>
+<p>触发源</p>
+<p>可以通过寄存器ADC_CR2来控制，写1开始，写0结束</p>
+<p>还可以触发转换：内部定时器触发，外部IO触发</p>
+</li>
+<li>
+<p>ADC时钟</p>
+<p>由PCLK2经过分频产生，最大14M</p>
+<p>分频因子由RCC时钟配置寄存器RCC_CFGR的位15:14 ADCPRE[1:0]设置，可以是2/4/6/8分频</p>
+</li>
+<li>
+<p>中断相关</p>
+<p>中断方式</p>
+</li>
+<li>
+<p>使用方法 
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>typedef struct
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>{
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    uint32_t Mode;                      // ADC 工作模式选择 一个ADC为独立模式 两个
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                                        // ADC为双模式，双模式下还有具体模式
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    FunctionalState ScanConvMode;       // ADC 扫描（多通道）用ENABLE或者单次（单通道）模式选择DISABLE //
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    FunctionalState ContinuousConvMode; // ADC 单次转换或者连续转换选择
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    uint32_t ExternalTrigConv;          // ADC 转换触发信号选择
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    uint32_t DataAlign;                 // ADC 数据寄存器对齐格式
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    uint8_t NbrOfChannel;               // ADC 采集通道数
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>}ADC_InitTypeDef;
+</code></pre></div></p>
+</li>
+</ul>
+<h2 id="_5">其他<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>断言：
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>#ifdef  USE_FULL_ASSERT
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>/**
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>* @brief  assert_param 宏用于函数的输入参数检查
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>* @param  expr:若expr值为假，则调用assert_failed函数
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>*             报告文件名及错误行号
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>*              若expr值为真，则不执行操作
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>*/
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>#define assert_param(expr) \((expr) ? (void)0 : assert_failed((uint8_t *)__FILE__, __LINE__))
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>/* 错误输出函数 ------------------------------------------------------- */
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>void assert_failed(uint8_t* file, uint32_t line);
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>#else
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>#define assert_param(expr) ((void)0)
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>#endif
+</code></pre></div>
+    通过定义USE_FULL_ASSERT来判断是否使用断言</p>
+<p>若使用，可以用以下函数来输出错误：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>void assert_failed(uint8_t \* file, uint32_t line)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>{
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    printf(“/r/n 输入参数错误，错误文件名=%s,行号=%s”,file,line);
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>}
+</code></pre></div>
+注释：</p>
+<p>使用Doxygen注释规范</p>
+<p>防止头文件重复包含</p>
+<p>和C++中一样的方式使用
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>#ifndef __LED_H
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>#define __LED_H
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>/*此处省略头文件的具体内容*/
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>#endif /* end of __LED_H */
+</code></pre></div></p>
+</li>
+</ul>
 
 
 
@@ -1104,7 +1495,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../image_capture/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 2.2. &amp;nbsp; 捕捉图像" rel="prev">
+          <a href="../STM32/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 7.2. &amp;nbsp; STM32开发资料" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1113,20 +1504,20 @@
                 <span class="md-footer__direction">
                   上一页
                 </span>
-                2.2. &nbsp; 捕捉图像
+                7.2. &nbsp; STM32开发资料
               </div>
             </div>
           </a>
         
         
           
-          <a href="../data_processing/" class="md-footer__link md-footer__link--next" aria-label="下一页: 2.4. &amp;nbsp; 软件上的数据处理" rel="next">
+          <a href="../STM32-FOC-Ctrl/" class="md-footer__link md-footer__link--next" aria-label="下一页: 7.4. &amp;nbsp; STM32-FOC-Ctrl" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   下一页
                 </span>
-                2.4. &nbsp; 软件上的数据处理
+                7.4. &nbsp; STM32-FOC-Ctrl
               </div>
             </div>
             <div class="md-footer__button md-icon">

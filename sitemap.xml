@@ -2,152 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.ssl-wiki.com/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_communicate/udp/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_communicate/Software-to-software_communication/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.ssl-wiki.com/chapter_communicate/Transmitter_principle/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_communicate/wireless_serial_port/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_electronics/encoders%26motor_control/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_electronics/FOC/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_electronics/main_loop/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_electronics/HAL/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_electronics/motor_type%26driver/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_electronics/STM32-FOC-Ctrl/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_electronics/power_module%26kick_control/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_electronics/STM32/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.ssl-wiki.com/chapter_electronics/rasberrypi/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_introduction/ssl_framework/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_introduction/ssl_more_info/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_introduction/what_is_ssl/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_mechanics/chassis%26wheels/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_mechanics/dribble/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_mechanics/kick/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.ssl-wiki.com/chapter_mechanics/mechanics/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_other_experiences/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_preface/about_the_book/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_preface/suggestions/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_software/Tigers-AutoRef/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_software/cray/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_software/gameController/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_software/owl2/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_software/qt/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_strategy/field_estimation/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_strategy/motion/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_strategy/play/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_strategy/skill/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.ssl-wiki.com/chapter_strategy/strategy_framework/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_vision/data_processing/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_vision/vision_access/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.ssl-wiki.com/chapter_vision/image2data/</loc>
-         <lastmod>2023-11-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.ssl-wiki.com/chapter_vision/image_capture/</loc>
-         <lastmod>2023-11-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.ssl-wiki.com/chapter_vision/vision_frameword/</loc>
-         <lastmod>2023-11-11</lastmod>
+         <loc>https://www.ssl-wiki.com/chapter_vision/vision_operation/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

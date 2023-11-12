@@ -12,20 +12,20 @@
         <meta name="author" content="SYLG">
       
       
-        <link rel="canonical" href="https://www.ssl-wiki.com/chapter_electronics/power_module%26kick_control/">
+        <link rel="canonical" href="https://www.ssl-wiki.com/chapter_electronics/FOC/">
       
       
-        <link rel="prev" href="../main_loop/">
+        <link rel="prev" href="../../chapter_mechanics/mechanics/">
       
       
-        <link rel="next" href="../motor_type%26driver/">
+        <link rel="next" href="../STM32/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.0.13">
     
     
       
-        <title>7.1.   功率模块和踢控 - SSL Wiki</title>
+        <title>7.1.   FOC开发 - SSL Wiki</title>
       
     
     
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7.1. &nbsp; 功率模块和踢控
+              7.1. &nbsp; FOC开发
             
           </span>
         </div>
@@ -398,10 +403,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -422,8 +423,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_vision/vision_frameword/" class="md-nav__link">
-        2.1. &nbsp; 基本架构
+      <a href="../../chapter_vision/vision_access/" class="md-nav__link">
+        2.1. &nbsp; vision启动与接入
       </a>
     </li>
   
@@ -436,36 +437,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_vision/image_capture/" class="md-nav__link">
-        2.2. &nbsp; 捕捉图像
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_vision/image2data/" class="md-nav__link">
-        2.3. &nbsp; 从图像到数据
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_vision/data_processing/" class="md-nav__link">
-        2.4. &nbsp; 软件上的数据处理
+      <a href="../../chapter_vision/vision_operation/" class="md-nav__link">
+        2.2. &nbsp; vision操作流程
       </a>
     </li>
   
@@ -640,8 +613,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_communicate/udp/" class="md-nav__link">
-        4.1. &nbsp; udp通讯
+      <a href="../../chapter_communicate/Transmitter_principle/" class="md-nav__link">
+        4.1. &nbsp; 发射机原理
       </a>
     </li>
   
@@ -654,8 +627,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_communicate/wireless_serial_port/" class="md-nav__link">
-        4.2. &nbsp; 无线串口通讯
+      <a href="../../chapter_communicate/Software-to-software_communication/" class="md-nav__link">
+        4.2. &nbsp; 软件间通讯
       </a>
     </li>
   
@@ -808,10 +781,6 @@
         
           
         
-          
-        
-          
-        
       
       
         <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -832,36 +801,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chapter_mechanics/chassis%26wheels/" class="md-nav__link">
-        6.1. &nbsp; 底盘及轮子
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_mechanics/dribble/" class="md-nav__link">
-        6.2. &nbsp; 控球模块
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../chapter_mechanics/kick/" class="md-nav__link">
-        6.3. &nbsp; 踢球模块
+      <a href="../../chapter_mechanics/mechanics/" class="md-nav__link">
+        6.1. &nbsp; 机械结构
       </a>
     </li>
   
@@ -903,6 +844,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -921,20 +864,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../main_loop/" class="md-nav__link">
-        7.1. &nbsp; 主循环
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -943,10 +872,133 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          7.1. &nbsp; FOC开发
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        7.1. &nbsp; 功率模块和踢控
+        7.1. &nbsp; FOC开发
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    分析
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    原理图
+  </a>
+  
+    <nav class="md-nav" aria-label="原理图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#foc" class="md-nav__link">
+    FOC控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.电流采样
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2clark" class="md-nav__link">
+    2.Clark变换
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3park" class="md-nav__link">
+    3.Park变换
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-i_d-refi_q-ref" class="md-nav__link">
+    4. I_{d-ref},I_{q-ref} 的选取
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5u_qu_d" class="md-nav__link">
+    5.计算U_q,U_d
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-parku_alphau_beta" class="md-nav__link">
+    6. 反Park变换计算\(U_{\alpha},U_{\beta}\)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7svpwm" class="md-nav__link">
+    7.SVPWM模块
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8as5047" class="md-nav__link">
+    8.as5047相关
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i2c" class="md-nav__link">
+    I2C通信
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    开发注意事项
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -959,8 +1011,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../motor_type%26driver/" class="md-nav__link">
-        7.2. &nbsp; 电机选型及驱动
+      <a href="../STM32/" class="md-nav__link">
+        7.2. &nbsp; STM32开发资料
       </a>
     </li>
   
@@ -973,8 +1025,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../encoders%26motor_control/" class="md-nav__link">
-        7.3. &nbsp; 编码器和电机控制
+      <a href="../HAL/" class="md-nav__link">
+        7.3. &nbsp; HAL库
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STM32-FOC-Ctrl/" class="md-nav__link">
+        7.4. &nbsp; STM32-FOC-Ctrl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rasberrypi/" class="md-nav__link">
+        7.4. &nbsp; 树莓派
       </a>
     </li>
   
@@ -1051,6 +1131,113 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    分析
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    原理图
+  </a>
+  
+    <nav class="md-nav" aria-label="原理图">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#foc" class="md-nav__link">
+    FOC控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1.电流采样
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2clark" class="md-nav__link">
+    2.Clark变换
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3park" class="md-nav__link">
+    3.Park变换
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-i_d-refi_q-ref" class="md-nav__link">
+    4. I_{d-ref},I_{q-ref} 的选取
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5u_qu_d" class="md-nav__link">
+    5.计算U_q,U_d
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-parku_alphau_beta" class="md-nav__link">
+    6. 反Park变换计算\(U_{\alpha},U_{\beta}\)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7svpwm" class="md-nav__link">
+    7.SVPWM模块
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8as5047" class="md-nav__link">
+    8.as5047相关
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i2c" class="md-nav__link">
+    I2C通信
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    开发注意事项
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1065,7 +1252,7 @@
                   
 
   
-    <a href="https://github.com/SY-LG/SSL-Wiki/edit/master/docs/chapter_electronics/power_module&kick_control.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/SY-LG/SSL-Wiki/edit/master/docs/chapter_electronics/FOC.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1073,9 +1260,106 @@
   
 
 
-  <h1>7.1. &nbsp; 功率模块和踢控</h1>
-
-
+<h1 id="_1">电机驱动实现分析<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<ul>
+<li>stm32f103c8t6</li>
+<li>烧录器：J-Link Dp-link</li>
+<li>stm32cubemx</li>
+</ul>
+<h2 id="_2">分析<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>实现与树莓派的I2C通信获取速度指令</li>
+<li>通过FOC算法控制电机速度：<ul>
+<li>实现与as5047的SPI通信获取编码器数值</li>
+<li>实现电流的采样，本质为电压，需要使用ADC模块</li>
+<li>实现SVPWM输出</li>
+</ul>
+</li>
+</ul>
+<p><img alt="1" src="../pictures_FOC/1.PNG" />   </p>
+<p>上图中的速度控制不在考虑之内，通过编码器获得速度对速度进行控制即可,先实现电机的控制.</p>
+<h2 id="_3">原理图<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="foc">FOC控制<a class="headerlink" href="#foc" title="Permanent link">&para;</a></h3>
+<p><img alt="2" src="../pictures_FOC/2.png" /></p>
+<h3 id="1">1.电流采样<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>一定有I_a+I_b+I_c=0，所以只需要获得其中两个</p>
+<p>实际PCB设计电路的时候：开尔文接法(Kelvin connections)</p>
+<h3 id="2clark">2.Clark变换<a class="headerlink" href="#2clark" title="Permanent link">&para;</a></h3>
+<p>电流的方向定义应当是以流向中心为正方向，也即流入电机为正方向</p>
+<p>三相坐标系：以<span class="arithmatex">\(I_a,I_b,I_c\)</span>为基向量的坐标系</p>
+<p>但实际上对于一个平面中的坐标系，只需要两个即可</p>
+<p>定义新的<span class="arithmatex">\(\alpha,\beta\)</span>坐标系</p>
+<p>定义如下的基向量：</p>
+<p><img alt="3" src="../pictures_FOC/3.png" /></p>
+<p>这个公式可能由于电流方向定义的不同正负号有所差别，下面矩阵定义的是更常见的形式，按照矩阵进行推导</p>
+<p>(？？？？？？？？？？这里的推导和代码中不一样)</p>
+<p><img alt="4" src="../pictures_FOC/4.PNG" /></p>
+<p><img alt="5" src="../pictures_FOC/5.png" /></p>
+<p><img alt="6" src="../pictures_FOC/6.PNG" /></p>
+<p>前面乘以<span class="arithmatex">\(\frac{2}{3}\)</span>是等赋值变换，乘以<span class="arithmatex">\(\sqrt{\frac{2}{3}}\)</span>是等功率变换，这里是等赋值变换，所以是：</p>
+<p><img alt="7" src="../pictures_FOC/7.PNG" /></p>
+<p>这里和代码是能够对上的</p>
+<p>经过上述操作后，少了一个控制变量？？？？</p>
+<h3 id="3park">3.Park变换<a class="headerlink" href="#3park" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(I_a,I_b,I_c\)</span>是正弦波，<span class="arithmatex">\(I_{\alpha},I_{\beta}\)</span>也为正弦波</p>
+<p>将<span class="arithmatex">\(\alpha,\beta\)</span>坐标系旋转<span class="arithmatex">\(\theta\)</span>，<span class="arithmatex">\(\theta\)</span>为电机电角度，得到<span class="arithmatex">\(d,q\)</span>坐标系，</p>
+<p>该坐标系随着转子旋转</p>
+<p><img alt="8" src="../pictures_FOC/8.png" /></p>
+<p><img alt="9" src="../pictures_FOC/9.png" /></p>
+<p>电角度的测量</p>
+<p>_normalizeAngle((shaft_angle + sensor_offset) * pole_pairs -zero_electric_angle)</p>
+<p>上述中有多个变量</p>
+<p>编码器获得的角度：angle，这里的角度可以经过一个低通滤波后用于其它的计算</p>
+<p>轴角：shaft angle = angle * direction - sensor offset</p>
+<p>direction：指顺时针还是逆时针，由于编码器安装不同，所以这里也可能不同</p>
+<p>sensor offset：可能指编码器角度与电机机械角度的差值，如果不使用电机机械角度的话，这个值可能无关紧要</p>
+<p>electric angle：每一对极所占的空间中的角度定义为360度电角度</p>
+<p>电角度的计算：</p>
+<p>electric_angle = normalize(angle * direction * pole_pairs - 
+zero_electric_angle)</p>
+<p>zero_electric_angle：相当于电角度在-90度时，编码器的值
+为什么是-90度：因为磁场要超前转子90度，所以转子在-90度时期望磁场角度为0度</p>
+<p>所以测量的方法为，使转子在电角度原点，然后测量编码器的值</p>
+<p>具体操作为：</p>
+<p>开环设置<span class="arithmatex">\(U_q=V,U_d=0\)</span>，电角度设置为-90度，测量此时编码器的值即为zero_electric_angle</p>
+<p>电压的设置方法会让它与A相平行，然后由于电角度设置为-90，所以是落后A相90度</p>
+<h3 id="4-i_d-refi_q-ref">4. I_{d-ref},I_{q-ref} 的选取<a class="headerlink" href="#4-i_d-refi_q-ref" title="Permanent link">&para;</a></h3>
+<p>上述两个变换的本质是将转子磁链进行了解耦，分为转子旋转的径向和切向两个方向</p>
+<p>其中，<span class="arithmatex">\(I_q\)</span>是期望力矩输出，是切向方向的；<span class="arithmatex">\(I_d\)</span>是转子径向的，希望它为0</p>
+<p><img alt="0" src="../pictures_FOC/0.PNG" /></p>
+<h3 id="5u_qu_d">5.计算U_q,U_d<a class="headerlink" href="#5u_qu_d" title="Permanent link">&para;</a></h3>
+<p><img alt="10" src="../pictures_FOC/10.PNG" /></p>
+<h3 id="6-parku_alphau_beta">6. 反Park变换计算<span class="arithmatex">\(U_{\alpha},U_{\beta}\)</span><a class="headerlink" href="#6-parku_alphau_beta" title="Permanent link">&para;</a></h3>
+<p><img alt="11" src="../pictures_FOC/11.PNG" /></p>
+<h3 id="7svpwm">7.SVPWM模块<a class="headerlink" href="#7svpwm" title="Permanent link">&para;</a></h3>
+<p>注意，这里没有使用反Clark模块输出三个电压，其原因为：</p>
+<p>如果使用反Clark变换那么会得到3个正弦波输出的电压，实际上直接输出正弦波是很复杂的事情，所以使用SVPWM来代替正弦波</p>
+<h3 id="8as5047">8.as5047相关<a class="headerlink" href="#8as5047" title="Permanent link">&para;</a></h3>
+<p><img alt="12" src="../pictures_FOC/12.png" /></p>
+<p>An SPI transaction consists of a 16-bit command frame followed by a 16-bit data frame. </p>
+<p><img alt="13" src="../pictures_FOC/13.png" /></p>
+<p><img alt="14" src="../pictures_FOC/14.png" /></p>
+<h2 id="i2c">I2C通信<a class="headerlink" href="#i2c" title="Permanent link">&para;</a></h2>
+<p>I2C从机HAL库硬件中断接收实现方式主要参考：<a href="https://blog.csdn.net/weixin_42397123/article/details/110137296">https://blog.csdn.net/weixin_42397123/article/details/110137296</a></p>
+<p>I2C 总线必须外部上拉，猜测可能不上拉可能导致通信错误</p>
+<p>树莓派内部有上拉</p>
+<h2 id="_4">开发注意事项<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>目前i2c通信内容为：</p>
+<p>00 ff xx xx xx xx ff</p>
+<p>第一个字节可能是地址之类的，一定存在</p>
+<p>第二个字节与第七个字节是校验位，为ff，后续还可以设计奇偶校验之类的</p>
+<p>中间为float的4个字节</p>
+<p>HAL_I2C_Slave_Receive_IT接收信息的大小为7</p>
+<p>目前使用的USB转I2C调试工具使用方法参见相应手册，相关文档链接:<a href="https://pan.baidu.com/s/16rViJ_53XLI5BQ2qD5PWSw">https://pan.baidu.com/s/16rViJ_53XLI5BQ2qD5PWSw</a></p>
+<p>目前i2c通信存在卡死的情况，在以下两种情况需要reset（DeInit然后Init）：</p>
+<ol>
+<li>
+<p>校验位错误</p>
+</li>
+<li>
+<p>每隔2s</p>
+</li>
+</ol>
 
 
 
@@ -1104,7 +1388,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../main_loop/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 7.1. &amp;nbsp; 主循环" rel="prev">
+          <a href="../../chapter_mechanics/mechanics/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 6.1. &amp;nbsp; 机械结构" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1113,20 +1397,20 @@
                 <span class="md-footer__direction">
                   上一页
                 </span>
-                7.1. &nbsp; 主循环
+                6.1. &nbsp; 机械结构
               </div>
             </div>
           </a>
         
         
           
-          <a href="../motor_type%26driver/" class="md-footer__link md-footer__link--next" aria-label="下一页: 7.2. &amp;nbsp; 电机选型及驱动" rel="next">
+          <a href="../STM32/" class="md-footer__link md-footer__link--next" aria-label="下一页: 7.2. &amp;nbsp; STM32开发资料" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   下一页
                 </span>
-                7.2. &nbsp; 电机选型及驱动
+                7.2. &nbsp; STM32开发资料
               </div>
             </div>
             <div class="md-footer__button md-icon">
