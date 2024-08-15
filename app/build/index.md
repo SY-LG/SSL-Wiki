@@ -1,34 +1,142 @@
----
-comments: true
-hide:
-  - footer
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* 这里的CSS只影响当前页面 */
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-# SSL-Wiki
+button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
 
-## 关于本教培系统
+button:hover::before {
+  width: 105%;
+}
 
-本项目致力于构建一套开源免费、新手友好的Robocup小型组入门教培系统。
+button:hover {
+  color: #111;
+}
 
-- 教培系统采用动画图解，结构化地讲解Robocup小型组知识，内容清晰易懂、学习曲线平滑；
-- 算法源代码皆可一键运行，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Zig 等语言；
-- 鼓励读者在章节讨论区互帮互助、共同进步，提问与评论一般能在两日内得到回复；
+.md-typeset a {
 
-## 读者对象
+ color: #46ffe9fe;
 
-如果您是「机器人入门者」，对机器人相关很感兴趣，但没有接触过机器人，那么这套教培系统就是为你而写！
+ text-decoration: underline;
 
-如果您是「机器人老手」，参与过一定机器人相关项目，那么本教培系统可以帮助你回顾与梳理机器人相关知识体系，进一步改进项目或带领您的项目成员进军Robocup SSL！
+}
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+}
 
-如果您是「机器人大佬」，希望可以得到你的宝贵意见建议！
+.container h1:nth-child(1) {
+  color: #355c7d;
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40,end) forwards;
+}
 
-## 致谢
+.container h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #eea949, #ea9c1f, #ee7206);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
 
-本书的成书过程中，我获得了许多人的帮助，包括但不限于：
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
 
-- 感谢项目组全体成员的付出，感谢SRC赛队对本项目的大力支持
-- 感谢 [hello-algo](https://github.com/krahets/hello-algo) 给出的写作模板，以及优秀开源项目 [Material-for-MkDocs](https://github.com/squidfunk/mkdocs-material/tree/master) 。
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
 
-## License
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
-The texts, codes, images, photos, and videos in this repository are licensed under [CC BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+  </style>
+</head>
+<body>
+  <!-- 页面内容 -->
+</body>
+
+</html>
+<div class = "container">
+  <h1>Hi, my name is</h1>
+  <h1>SRC</h1>
+</div>
+
+
+​																	<button>[explore](chapter_preface)</button>
+
